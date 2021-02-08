@@ -1,0 +1,13 @@
+[user]
+	name = Ajit Panigrahi
+	email = AjitZero@users.noreply.github.com
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+	rebase = false
+[core]
+	ignorecase = false
+	autocrlf = input
