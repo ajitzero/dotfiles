@@ -1,12 +1,7 @@
+DISABLE_MAGIC_FUNCTIONS="true"
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
-
-# Flutter stuff
-export PATH="$PATH:/Users/az/Manually Installed/flutter/bin"
-
-# go-lang stuff
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/az/.oh-my-zsh"
@@ -15,9 +10,9 @@ export LC_CTYPE=C
 export LANG=C
 
 # fix  for vim: https://stackoverflow.com/a/56743150/8080186
-# export LC_ALL=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
-ZSH_THEME="shades-of-purple"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -46,29 +41,30 @@ source $ZSH/oh-my-zsh.sh
 fpath=(/usr/local/share/zsh-completions $fpath)
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-alias zshconfig="vi ~/.zshrc"
+alias vrc="vi ~/.vimrc"
+alias zrc="vi ~/.zshrc"
+alias szrc="source ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
+alias cx="code ."
+alias cc="cd ~/GitHub"
 
 # Shorthands
 alias c="clear"
-alias cgst="c && gst"
 alias cls="c && ls"
 alias l="ls -A"
 alias la="ls -lA"
 alias ll="ls -l"
-alias cx="code ."
-alias cc="cd ~/GitHub"
 alias lst="tree"
 
 # Delete branch locally
@@ -116,3 +112,4 @@ export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
