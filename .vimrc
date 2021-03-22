@@ -1,6 +1,6 @@
 set nu rnu
 set cursorline
-highlight CursorLine ctermfg=White ctermbg=Darkgray guifg=white guibg=darkgray
+highlight CursorLine cterm=NONE ctermfg=White ctermbg=Darkgray guifg=white guibg=darkgray
 set pastetoggle=<F2>
 nnoremap <silent> <Esc><Esc> :noh<CR> :call clearmatches()<CR>
 set backspace=indent,eol,start
