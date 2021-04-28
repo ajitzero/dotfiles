@@ -2,6 +2,7 @@ highlight CursorLine cterm=NONE ctermbg=darkgray ctermfg=NONE
 highlight lineNr     cterm=NONE
 nnoremap <F3> :set nu! rnu! list!<CR>
 nnoremap <silent> <Esc><Esc> :noh<CR> :call clearmatches()<CR>
+nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 set backspace=indent,eol,start
 set cursorline
 " set lcs+=space:·
